@@ -1,0 +1,72 @@
+@import "_reset";
+@import "_fonts";
+@import "_mixins";
+@import "_slick";
+
+@import "_hero";
+@import "_members";
+@import "_footer";
+
+
+
+/* General */
+
+body {
+  color: #123454;
+  background: #fafaf6;
+}
+
+h1 {
+  font-family: 'Aleo';
+  font-weight: 300;
+  font-size: 38px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+b, strong {
+  font-family: 'Gotham-bold';
+}
+
+i, em {
+  font-family: 'Gotham-light-italic';
+}
+
+.svg-sprite {
+  display: none;
+}
+.btn {
+  display: inline-block;
+  min-width: 223px;
+  padding: 11px 0;
+  color: #fff;
+  font-family: "Gotham-book";
+  font-size: 18px;
+  text-align: center;
+  border: 1px solid #123454;
+  background-color: #123454;
+  transition: background .3s ease;
+  &:hover {
+    border-color: #ffcc32;
+    background-color: #ffcc32;
+  }
+  &__transparent {
+    border: 1px solid #fff;
+    background: none;
+  }
+  &__round {
+    display: inline-block;
+    width:50px;
+    height:50px;
+    font-size: 18px;
+    text-align:center;
+    font-family: "Gotham-book";
+    color: #123454;
+    line-height:50px;
+    background-color: #ffcc32;
+    border-radius: 50%;
+  }
+}

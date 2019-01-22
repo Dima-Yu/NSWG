@@ -1,0 +1,118 @@
+.members {
+  padding: 85px 0 70px;
+  background: #f0f0eb;
+  h1 {
+    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #ffcc32;
+    .star-icon {
+      position: absolute;
+      top: 74%;
+      left: 50%;
+      width: 27px;
+      height: 27px;
+      margin-left: -13.5px;
+      fill: #ffcc32;
+      stroke: #f0f0eb;
+    }
+  }
+  &--container {
+    max-width: 1215px;
+    margin: auto;
+  }
+
+  &--slider {
+    margin-top: 78px;
+    &__item {
+      position: relative;
+      height: 450px;
+      margin: 0 20px;
+      padding: 25px 0;
+      overflow: hidden;
+      background: #fff;
+      box-sizing: border-box;
+      transition: all ease .4s;
+      outline: none;
+      img {
+        margin: auto;
+        border-radius: 50%;
+        transition: opacity ease .4s;
+      }
+      &:hover {
+        background: #ffcc32;
+        img{opacity: 0}
+        .members--slider__item--content {
+          top: 2%;
+        }
+      }
+    }
+    &__item--content {
+      position: absolute;
+      top: 58%;
+      margin-top: 15px;
+      padding: 0 25px;
+      font-family: 'Gotham-Light';
+      font-size: 18px;
+      line-height: 22px;
+      transition: top ease .4s;
+
+      h2 {
+        margin-bottom: 15px;
+        font-family: 'Gotham-bold';
+        font-size: 24px;
+        line-height: 28px;
+      }
+      .sign {
+        font-family: 'Gotham-Light';
+        font-size: 22px;
+      }
+      .preview-text {
+        height: 150px;
+        margin-top: 20px;
+        padding-top: 18px;
+        overflow: hidden;
+        border-top: 1px solid #fafafa;
+      }
+      .more {
+        display: inline-block;
+        float: right;
+        width: 0;
+        height: 0;
+        margin-top: 27px;
+        border: 14px solid transparent;
+        border-left-color: #fff;
+        border-right: none;
+      }
+    }
+  }
+  .btn-block {
+    margin-top: 80px;
+    text-align: center;
+  }
+  .btn {
+    font-size: 24px;
+    padding: 16px 32px;
+    letter-spacing: 1px;
+    line-height: 1.2;
+  }
+
+  @media @s-size {
+    padding: 40px 0 40px;
+    &--slider {
+      margin-top: 40px;
+    }
+    .btn-block {
+      margin-top: 40px;
+    }
+  }
+
+  // @media @xl-size {
+  //   padding: 40px 0 40px;
+  //   &--slider {
+  //     margin-top: 40px;
+  //   }
+  //   .btn-block {
+  //     margin-top: 40px;
+  //   }
+  // }
+}
